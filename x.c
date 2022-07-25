@@ -1513,7 +1513,7 @@ xmakeglyphfontspecs(XftGlyphFontSpec *specs, const Glyph *glyphs, int len, int x
 	}
 
 	/* Harfbuzz transformation for ligatures. */
-	hbtransform(specs, glyphs, len, x, y);
+	// hbtransform(specs, glyphs, len, x, y);
 
 	return numspecs;
 }
@@ -1675,7 +1675,7 @@ xdrawcursor(int cx, int cy, Glyph g, int ox, int oy, Glyph og, Line line, int le
 
 	/* Redraw the line where cursor was previously.
 	 * It will restore the ligatures broken by the cursor. */
-	xdrawline(line, 0, oy, len);
+	// xdrawline(line, 0, oy, len);
 
 	if (IS_SET(MODE_HIDE))
 		return;
