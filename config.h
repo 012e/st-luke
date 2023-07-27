@@ -7,6 +7,12 @@
  */
 static char *font = "Iosevka Nerd Font:pixelsize=20:antialias=true:autohint=true";
 static char *font2[] = { "NotoColorEmoji:pixelsize=15:antialias=true:autohint=true" };
+
+/* disable bold, italic and roman fonts globally */
+int disablebold = 0;
+int disableitalic = 1;
+int disableroman = 0;
+
 static int borderpx = 2;
 
 /*
